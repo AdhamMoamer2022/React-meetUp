@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Adding Routing
+    we need to install react-router-dom and we have to add the below three things:
+     1- Import { BrowserRouter } from 'react-router-dom'; and thats in the index.js and wrap the entire app with BrowserRouter
+     2- Add the page folder and start to add our pages (the different between pages and components is that pages consist of many components)
+     3- Add the routes to the pages in the App.js file
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+     by default the router will check for all the matching routes and if there is a match it will render the component
+     so in case to set the router to take only one route we have to wrap the routes with Switch component
+     and we can additional attribute to the route to check for the exact route.
 
-## Available Scripts
+     *update
+     in the new version of React 
+     we use Routes and match the path with component using element property
 
-In the project directory, you can run:
+# Adding Links & Navigation
+    in normal html we have to use <a> tag to create a link, which when we click it will send a request to the server to get the page
+    then the browser router will render the required page
+    React has come with a solution for this as we dona  want to send any request to the server, we can use Link component
+    Link component is a component that we can use to create a link, it has a property called to which we can pass the path to the page
+    Link will change the url to the path we pass to it.
 
-### `npm start`
+# CSS Modules
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    we already have our index.css file which is the main CSS file. However, if we need to assign specific styles to different components, 
+    so in this case we need to create a separate CSS file for each component.
+    in other word we create specific CSS module for each component , we also have to put .module in the name of the CSS file.
+    and then we import the Styles or the classes to the component and we deal with the styles in the component as  it is a object.
+    and then and in the build step we bundle all the CSS modules into one file.
+    also if there is conflict between the styles in the module and the global styles React will choose the one in the module if we use the object syntax.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Outputting Lists 1:56:14
+Adding More Components´2:02:04
+Props Children 2:11:52
+Adding a Form 2:20:31
+Getting User Input & Handling Form Submission 2:29:30
+Preparing the App for HTTP 2:39:15
+Sending a Post Request 2:46:07
+Navigating Programmatically 2:51:25
+Getting Started with Fetching Data 2:55:07
+useEffect 3:04:32
+Introducing React Context´3:14:40
+Context Logic & Different Ways of Updating State 3:25:43
+Using Context in Components 3:31:37
+More Context Usage 3:43:48
+Summary 3:50:42
